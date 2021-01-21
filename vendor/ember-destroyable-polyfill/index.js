@@ -144,11 +144,11 @@ import { gte } from 'ember-compatibility-helpers';
       m.setSourceDestroying(); // This calls `runDestructors`
     }
 
-    const RUNNING = new WeakSet();
+    // const RUNNING = new WeakSet();
 
     function runDestructors(destroyable) {
-      if (RUNNING.has(destroyable)) return;
-      RUNNING.add(destroyable);
+      // if (RUNNING.has(destroyable)) return;
+      // RUNNING.add(destroyable);
 
       const m = Ember.meta(destroyable);
 
